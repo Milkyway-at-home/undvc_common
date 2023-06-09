@@ -51,7 +51,7 @@ message (status "BOINC FOUND: ${BOINC_SERVER_FOUND}, MYSQL FOUND: ${MYSQL_FOUND}
 
 link_directories(${Boost_LIBRARY_DIRS})
 
-add_library(undvc_common vector_io arguments file_io parse_xml)
+add_library(undvc_common vector_io.cxx arguments.cxx file_io.cxx parse_xml.cxx)
 
 message(status "BOOST LIBRARIES: ${Boost_LIBRARIES}")
 

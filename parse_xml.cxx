@@ -101,3 +101,5 @@ void parse_xml_vector(string xml, const char tag[], vector<T> &result) throw (st
 
 template void parse_xml_vector<double>(string xml, const char tag[], vector<double> &result) throw (string);
 template void parse_xml_vector<uint64_t>(string xml, const char tag[], vector<uint64_t> &result) throw (string);
+template void parse_xml_vector<uint32_t>(string xml, const char tag[], vector<uint32_t> &result) throw (string);
+template void parse_xml_vector<int>(string xml, const char tag[], vector<int> &result) throw (string);

@@ -125,4 +125,5 @@ template string vector_2d_to_string(const vector< vector<double> > &v);
 
 template void string_to_vector<double>(string s, vector<double> &v);
 template void string_to_vector<uint64_t>(string s, vector<uint64_t> &v);
-
+template void string_to_vector<int>(string s, vector<int> &v);
+template void string_to_vector<uint32_t>(string s, vector<uint32_t> &v);
