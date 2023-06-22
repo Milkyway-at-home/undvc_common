@@ -6,7 +6,7 @@ set (UNDVC_COMMON_VERSION_MINOR 1)
  
 #set(CMAKE_CXX_FLAGS "-g -Wall -O3 -funroll-loops -msse3")
 
-set(CMAKE_LIBRARY_PATH ~/boost_1_53_0/stage/lib ${CMAKE_LIBRARY_PATH} /opt/local/lib)
+set(CMAKE_LIBRARY_PATH ~/boost_1_74_0/stage/lib ${CMAKE_LIBRARY_PATH} /opt/local/lib)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/cmake/Modules/")
 

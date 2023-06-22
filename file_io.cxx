@@ -8,11 +8,11 @@
 
 #include "file_io.hxx"
 
-#ifdef HAS_BOOST
+//#ifdef HAS_BOOST
 #include <boost/filesystem.hpp>
-#endif
+//#endif
 
-#ifdef _BOINC_
+//#ifdef _BOINC_
 
 #include "boinc_db.h"
 #include "error_numbers.h"
@@ -20,7 +20,7 @@
 #include "parse.h"
 #include "util.h"
 
-#endif
+//#endif
 
 
 using namespace std;
@@ -49,8 +49,8 @@ string get_file_as_string(string file_path) throw (int) {
     return oss.str();
 }
 
-#ifdef _BOINC_
-#ifdef HAS_BOOST
+//#ifdef _BOINC_
+//#ifdef HAS_BOOST
 void copy_file_to_download_dir(string filename) {
     char path[256];
 
@@ -91,5 +91,5 @@ void copy_file_to_download_dir(string filename) {
         dst.close();
     }   
 }
-#endif
-#endif
+//#endif
+//#endif
