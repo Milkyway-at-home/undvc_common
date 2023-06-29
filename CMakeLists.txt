@@ -6,7 +6,7 @@ set (UNDVC_COMMON_VERSION_MINOR 1)
  
 #set(CMAKE_CXX_FLAGS "-g -Wall -O3 -funroll-loops -msse3")
 
-set(CMAKE_LIBRARY_PATH ~/boost_1_53_0/stage/lib ${CMAKE_LIBRARY_PATH} /opt/local/lib)
+set(CMAKE_LIBRARY_PATH ~/boost_1_74_0/stage/lib ${CMAKE_LIBRARY_PATH} /opt/local/lib)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/cmake/Modules/")
 
@@ -51,7 +51,7 @@ message (status "BOINC FOUND: ${BOINC_SERVER_FOUND}, MYSQL FOUND: ${MYSQL_FOUND}
 
 link_directories(${Boost_LIBRARY_DIRS})
 
-add_library(undvc_common vector_io arguments file_io parse_xml)
+add_library(undvc_common vector_io.cxx arguments.cxx file_io.cxx parse_xml.cxx)
 
 message(status "BOOST LIBRARIES: ${Boost_LIBRARIES}")
 
