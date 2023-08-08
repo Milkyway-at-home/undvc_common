@@ -88,7 +88,7 @@ void parse_xml_vector(string xml, const char tag[], vector<T> &result) throw (st
     int length = end - start;
 
     if (length > 0) {
-        string_to_vector(xml.substr(start, length), result);
+        string_to_vector<T>(xml.substr(start, length), result);
         return;
     } else if (length == 0) {
         return;
