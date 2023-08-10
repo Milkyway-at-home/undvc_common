@@ -14,9 +14,6 @@ ENDIF (BOINC_INCLUDE_DIR)
 
 FIND_PATH(BOINC_INCLUDE_DIR api/boinc_api.h
     /boinc/src/boinc
-    /home/tdesell/boinc
-    /Users/deselt/Software/boinc
-    /boinc/src/BOINCBuild1.0.4/boinc
     $ENV{BOINC_SOURCE}
 )
 MESSAGE(STATUS "BOINC include directory: ${BOINC_INCLUDE_DIR}")
@@ -25,28 +22,28 @@ MESSAGE(STATUS "BOINC source: $ENV{BOINC_SOURCE}")
 
 FIND_LIBRARY(BOINC_LIBRARY
     NAMES boinc
-    PATHS /boinc/src/boinc /home/tdesell/boinc /Users/deselt/Software/boinc/mac_build/build/Deployment/ /boinc/src/BOINCBuild1.0.4/boinc $ENV{BOINC_SOURCE}
+    PATHS /boinc/src/boinc  $ENV{BOINC_SOURCE}
     PATH_SUFFIXES lib
 )
 MESSAGE(STATUS "BOINC library: ${BOINC_LIBRARY}")
 
 FIND_LIBRARY(BOINC_CRYPT_LIBRARY
     NAMES boinc_crypt
-    PATHS /boinc/src/boinc /home/tdesell/boinc /Users/deselt/Software/boinc/mac_build/build/Deployment/ /boinc/src/BOINCBuild1.0.4/boinc $ENV{BOINC_SOURCE}
+    PATHS /boinc/src/boinc  $ENV{BOINC_SOURCE}
     PATH_SUFFIXES lib
 )
 MESSAGE(STATUS "BOINC crypt library: ${BOINC_CRYPT_LIBRARY}")
 
 FIND_LIBRARY(BOINC_API_LIBRARY
     NAMES boinc_api
-    PATHS /boinc/src/boinc /home/tdesell/boinc /Users/deselt/Software/boinc/mac_build/build/Deployment/ /boinc/src/BOINCBuild1.0.4/boinc $ENV{BOINC_SOURCE}
+    PATHS /boinc/src/boinc  $ENV{BOINC_SOURCE}
     PATH_SUFFIXES api
 )
 MESSAGE(STATUS "BOINC api library: ${BOINC_API_LIBRARY}")
 
 FIND_LIBRARY(BOINC_SCHED_LIBRARY
     NAMES sched
-    PATHS /boinc/src/boinc /home/tdesell/boinc /Users/deselt/Software/boinc/mac_build/build/Deployment/ /boinc/src/BOINCBuild1.0.4/boinc $ENV{BOINC_SOURCE}
+    PATHS /boinc/src/boinc  $ENV{BOINC_SOURCE}
     PATH_SUFFIXES sched
 )
 MESSAGE(STATUS "BOINC sched library: ${BOINC_SCHED_LIBRARY}")
